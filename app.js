@@ -1,5 +1,5 @@
 (() => {
-  EBASE_CONFIG
+
   const FIREBASE_CONFIG = window.FIREBASE_CONFIG || null;
   const form = document.getElementById('searchForm');
   const queryEl = document.getElementById('query');
@@ -17,7 +17,7 @@
   let firebaseDb = null;
   let counterRef = null;
 
-let authReady = null; 
+let authReady = null;
 
 function initFirebase() {
   if (!FIREBASE_CONFIG) {
